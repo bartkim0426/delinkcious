@@ -1,4 +1,11 @@
 version: 2
+
+workflows:
+  build:
+    jobs:
+      - build:
+          context: delinkcious
+
 jobs:
   build:
     docker:
